@@ -1,0 +1,20 @@
+<aura:component >
+
+    <aura:attribute name="expenses" type="Expense__c[]"/>
+   <aura:attribute name="expensesCount" type="Integer" default="0"/>
+    
+	<aura:if isTrue="{!v.expensesCount!=0}">
+    <lightning:card title="" >
+        <p class="slds-p-horizontal--small slds-scrollable" style="height: 17rem; width:100%;">
+            <aura:iteration items="{!v.expenses}" var="expense">
+                <c:expenseItem expense="{!expense}"/>
+            </aura:iteration>
+        </p>
+     
+    </lightning:card>
+        <aura:set attribute="else">
+       <lightning:icon iconName="custom:custom13" variant="error" title="No Records." alternativeText="No Records."/>
+       No Records.     
+    </aura:set>
+</aura:if>
+</aura:component>
