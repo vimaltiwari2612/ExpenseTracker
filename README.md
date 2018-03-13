@@ -1,6 +1,12 @@
 
+ExpenseTracker 
+Version 1.0 
+Use this URL to install the package into any organization:
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7F000002uHu2
 
-To run this app 
+Note: If you are installing into a sandbox organization you must replace the initial portion of the URL with http://test.salesforce.com
+
+To run this app (using Dev Console)
 
 1. download the zip and deploy it to your org.
 2. open the developer console.
